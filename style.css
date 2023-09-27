@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+header {
+  grid-area: 1/ 1 / 2 /3;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #186f65;
+  color: white;
+  padding: 10px;
+}
+header > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: solid 5px white;
+}
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right-content > h2 {
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+  border: solid 2px white;
+}
+.right-content > h1 {
+  font-weight: 300;
+  font-size: 35px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.left {
+  grid-area: 2 / 1 / 4 / 2;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.profile > h1 {
+  border-bottom: solid 1px black;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.profile > p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-indent: 20px;
+}
+.experience > h1 {
+  border-bottom: solid 1px black;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.exp-1,
+.exp-2 {
+  text-align: start;
+  margin-left: 20px;
+}
+.right {
+  grid-area: 2 / 2/4/3;
+  background-color: #186f65;
+  margin-top: 20px;
+  margin-right: 20px;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.contact {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact > h1 {
+  border-bottom: solid 1px white;
+  padding-bottom: 10px;
+}
+.address,
+.phone,
+.mail,
+.social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.social > i > a,
+.mail > a {
+  text-decoration: none;
+  color: white;
+}
+.social > i > a:hover,
+.mail > a:hover {
+  color: black;
+}
