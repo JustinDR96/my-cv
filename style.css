@@ -7,6 +7,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
+  max-width: 100%;
 }
 .wrapper {
   display: grid;
@@ -111,4 +112,11 @@ header > img {
 .social > i > a:hover,
 .mail > a:hover {
   color: black;
+}
+
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
 }
